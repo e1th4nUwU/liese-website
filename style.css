@@ -79,6 +79,24 @@ body {
     color: #000;    
     border-width: 10px;
 }
+.page{
+    display: none;
+}
+.page.active{
+    display: block;
+}
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+.card {
+    color: #f8f9fa;
+    border: none;
+    background-color: #000;
+}
+.bold {
+    font-weight: 700;
+}
 
 section.hero p {
     font-size: 18px;
@@ -113,6 +131,12 @@ section.trusted {
 }
 
 #areas-de-investigacion {
+    color: #ffffff;
+    background-color: #000;
+    background-size: cover;
+    padding: 8rem 10%;
+}
+#proyectos {
     color: #ffffff;
     background-color: #000;
     background-size: cover;
