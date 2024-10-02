@@ -2,26 +2,77 @@
 
 :root {
     --primary-color: #393d64;
+    --azul-liese: #022968;
+    --verde-lima: #D1F2C3;
 }
 
-.text-primary {
-    color: var(--primary-color);
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 120%
+}
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 120%;
+}
+h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 120%;
+}
+h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 130%;
+}
+h5 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 140%;
+}
+h6 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 140%;
+}
+p.bold {
+    font-weight: 700;
+}
+p.semibold {
+    font-weight: 600;
+}
+p.medium {
+    font-weight: 500;
+}
+p.normal {
+    font-weight: 400;
+}
+p.large {
+    font-size: 1.25rem;
+    line-height: 150%;
+}
+p.mid {
+    font-size: 1.125rem;
+    line-height: 150%;
+}
+p.regular{
+    font-size: 1rem;
+    line-height: 150%;
+}
+p.small {
+    font-size: 0.875rem;
+    line-height: 150%;
+}
+p.x-small {
+    font-size: 0.75rem;
+    line-height: 150%;
 }
 
 body {
     font-family: "Lora", serif;
     font-optical-sizing: auto;
     font-style: normal;
-}
-
-.large-bold {
-    font-size: 68px;
-    font-weight: 700;
-}
-
-.medium-bold {
-    font-size: 48px;
-    font-weight: 700;
 }
 
 .btn {
@@ -37,6 +88,10 @@ body {
 
 .btn-primary {
     background-color: var(--primary-color);
+}
+
+.btn-cta {
+    background-color: var(--verde-lima);
 }
 
 .btn-primary:hover {
@@ -119,26 +174,33 @@ section.trusted {
     background-image: url(images/galaxia.png);
     background-size: cover;
     color: #ffffff;
-    padding: 8rem 15%;
-    font-size: 32px;
+    padding: 7.5rem 15%;
 }
 
 #about-us {
-    color: #ffffff;
-    background-color: #000;
+    color: #000;
+    background-color: #ffffff;
     background-size: cover;
-    padding: 8rem 10%;
+    padding: 7.5rem 10%;
+}
+
+#about-us p {
+    text-align: justify;
 }
 
 #areas-de-investigacion {
     color: #ffffff;
-    background-color: #000;
+    background-color: var(--azul-liese);
     background-size: cover;
-    padding: 8rem 10%;
+    padding: 7.5rem 10%;
+}
+
+#areas-de-investigacion p{
+    text-align: justify;
 }
 #proyectos {
     color: #ffffff;
     background-color: #000;
     background-size: cover;
-    padding: 8rem 10%;
+    padding: 7.5rem 10%;
 }
