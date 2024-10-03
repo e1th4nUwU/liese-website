@@ -89,19 +89,32 @@ body {
 .btn-primary {
     background-color: var(--primary-color);
 }
-
-.btn-cta {
-    background-color: var(--verde-lima);
-}
-
 .btn-primary:hover {
     background-color: var(--primary-color);
     top: -5px;
 }
-
 .btn-primary:focus {
     background-color: var(--primary-color);
 }
+
+.btn-cta {
+    background-color: var(--verde-lima);
+}
+.btn-cta:hover {
+    background-color: var(--azul-liese);
+    top: -5px;
+}
+
+.btn-black {
+    background-color: black;
+    color: white;
+}
+.btn-black:hover {
+    background-color: black;
+    color: white;
+    top: -5px;
+}
+
 
 .btn-light:hover {
     top: -5px;
@@ -160,9 +173,9 @@ section.hero p {
 
 /* Partners */
 
-section.trusted {
+ section.trusted {
     padding: 5rem 0;
-}
+} 
 
 @media (min-width: 1399.38px){
     .container {
@@ -194,10 +207,17 @@ section.trusted {
     background-size: cover;
     padding: 7.5rem 10%;
 }
-
+#areas-de-investigacion div.area{
+    color: black;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 1rem;
+}
 #areas-de-investigacion p{
     text-align: justify;
 }
+
 #proyectos {
     color: #ffffff;
     background-color: #000;
