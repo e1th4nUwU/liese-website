@@ -4,6 +4,7 @@
     --primary-color: #393d64;
     --azul-liese: #022968;
     --verde-lima: #D1F2C3;
+    --artic-blue: #AAEFFF;
 }
 
 h1 {
@@ -36,35 +37,35 @@ h6 {
     font-weight: 700;
     line-height: 140%;
 }
-p.bold {
+.bold {
     font-weight: 700;
 }
-p.semibold {
+.semibold {
     font-weight: 600;
 }
-p.medium {
+.medium {
     font-weight: 500;
 }
-p.normal {
+.normal {
     font-weight: 400;
 }
-p.large {
+.large {
     font-size: 1.25rem;
     line-height: 150%;
 }
-p.mid {
+.mid {
     font-size: 1.125rem;
     line-height: 150%;
 }
-p.regular{
+.regular{
     font-size: 1rem;
     line-height: 150%;
 }
-p.small {
+.small {
     font-size: 0.875rem;
     line-height: 150%;
 }
-p.x-small {
+.x-small {
     font-size: 0.75rem;
     line-height: 150%;
 }
@@ -89,19 +90,53 @@ body {
 .btn-primary {
     background-color: var(--primary-color);
 }
-
-.btn-cta {
-    background-color: var(--verde-lima);
-}
-
 .btn-primary:hover {
     background-color: var(--primary-color);
     top: -5px;
 }
-
 .btn-primary:focus {
     background-color: var(--primary-color);
 }
+
+.btn-cta {
+    background-color: var(--verde-lima);
+}
+.btn-cta:hover {
+    background-color: var(--azul-liese);
+    top: -5px;
+}
+
+.btn-transparent {
+    background-color: transparent;
+    border: none;
+    color: black;
+}
+.btn-transparent:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Efecto hover opcional */
+}
+.btn-articblue {
+    background-color: var(--artic-blue);
+    border: none;
+    color: black;
+    display: block;
+    margin: 0px auto;
+}
+.btn-articblue:hover {
+    background-color: var(--azul-liese);
+    color: white;
+    top: -5px;
+}
+
+.btn-black {
+    background-color: black;
+    color: white;
+}
+.btn-black:hover {
+    background-color: black;
+    color: white;
+    top: -5px;
+}
+
 
 .btn-light:hover {
     top: -5px;
@@ -111,6 +146,13 @@ body {
     padding: 17px 0;
     transition: all 0.5s ease;
     border-bottom: 1px solid #efefef;
+}
+
+.icon {
+    margin-right: 0.5rem; 
+    width: 24px; 
+    height: 24px;
+    vertical-align: middle; 
 }
 
 .nav-link {
@@ -160,9 +202,9 @@ section.hero p {
 
 /* Partners */
 
-section.trusted {
+ section.trusted {
     padding: 5rem 0;
-}
+} 
 
 @media (min-width: 1399.38px){
     .container {
@@ -194,10 +236,29 @@ section.trusted {
     background-size: cover;
     padding: 7.5rem 10%;
 }
-
+#areas-de-investigacion div.area{
+    color: black;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 1rem;
+}
 #areas-de-investigacion p{
     text-align: justify;
 }
+
+#footer {
+    background-color: white;
+    color: black;
+    padding: 11.25rem 1rem 5.625rem 1rem;
+}
+#footer.btn-transparent {
+    font-size: 3.5rem;
+}
+#footer a {
+    color: black;
+}
+
 #proyectos {
     color: #ffffff;
     background-color: #000;
